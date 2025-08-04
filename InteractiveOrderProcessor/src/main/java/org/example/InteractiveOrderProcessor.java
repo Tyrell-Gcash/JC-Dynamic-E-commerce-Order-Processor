@@ -128,15 +128,5 @@ public class InteractiveOrderProcessor {
 
         System.out.println("== compares mem location while .equals compares the actual content. equalsIgnoreCase is the same as .equals it's just not case sensitive.");
 
-//        --- String Equality Demo ---
-//        Enter first string for comparison: Hello
-//        Enter second string for comparison: hello
-//
-//        String 1: "Hello"
-//        String 2: "hello"
-//
-//        String 1 == String 2: false (Compares references, which are different for user input strings)
-//        String 1 .equals() String 2: false (Content is different due to case)
-//        String 1 .equalsIgnoreCase() String 2: true (Content is identical, ignoring case)
     }
 }
