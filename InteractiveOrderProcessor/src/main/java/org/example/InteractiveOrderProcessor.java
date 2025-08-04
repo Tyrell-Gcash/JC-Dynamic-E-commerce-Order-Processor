@@ -104,18 +104,30 @@ public class InteractiveOrderProcessor {
 
         System.out.printf("\nFinal Order Total: $%.2f",finalOrderTotal);
 
+        stringEquality();
+    }
 
-//        --- Calculation Steps ---
-//        Initial Subtotal: $240.00
-//        After Tier Discount (Gold - 15%): $204.00
-//        After Quantity Discount (5% for >=5 items): $193.80
-//        After Promotional Code (SAVE10 for >$75): $183.80
-//        After Small Order Surcharge (if applicable): $183.80 (No surcharge)
-//
-//        Shipping Cost: $12.50 (ZoneB)
-//
-//        Final Order Total: $196.30
-//
+    public static void stringEquality(){
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("\n--- String Equality Demo ---");
+
+        System.out.print("Enter first string for comparison: ");
+        String firstString = scanner.next();
+
+        System.out.print("Enter second string for comparison: ");
+        String secondString = scanner.next();
+
+        System.out.println("\nString 1: " + firstString);
+        System.out.println("String 2: " + secondString);
+
+        System.out.println("\n" + firstString == secondString);
+        System.out.println(firstString.equals(secondString));
+        System.out.println(firstString.equalsIgnoreCase(secondString));
+
+        System.out.println("== compares mem location while .equals compares the actual content. equalsIgnoreCase is the same as .equals it's just not case sensitive.");
+
 //        --- String Equality Demo ---
 //        Enter first string for comparison: Hello
 //        Enter second string for comparison: hello
